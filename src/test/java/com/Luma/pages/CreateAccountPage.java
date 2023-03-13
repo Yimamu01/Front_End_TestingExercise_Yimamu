@@ -12,28 +12,28 @@ public class CreateAccountPage {
     }
 
     @FindBy(id = "firstname")
-    public WebElement FirstNameBox;
+    public WebElement firstNameBox;
 
     @FindBy(id = "lastname")
-    public WebElement LastNameBox;
+    public WebElement lastNameBox;
 
     @FindBy(xpath = "//input[@autocomplete='email']")
-    public WebElement EmailAddressBox;
+    public WebElement emailAddressBox;
 
     @FindBy(css = "input[title='Password']")
-    public WebElement PasswordBox;
+    public WebElement passwordBox;
 
     @FindBy(id = "password-confirmation")
-    public WebElement ConfirmPasswordBox;
+    public WebElement confirmPasswordBox;
 
     @FindBy(xpath = "//button[@class='action submit primary']")
-    public WebElement CreateAnAccountButton;
+    public WebElement createAnAccountButton;
 
     @FindBy(id = "email_address-error")
     public WebElement emailErrorMessage;
 
     @FindBy(id = "password-confirmation-error")
-    public WebElement DissimilarPasswordMessage;
+    public WebElement dissimilarPasswordMessage;
 
 
 }

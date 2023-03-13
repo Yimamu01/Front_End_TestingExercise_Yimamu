@@ -14,7 +14,7 @@ public HomePage(){
 
 
 @FindBy(linkText = "Create an Account")
-   public WebElement CreatAnAccount ;
+   public WebElement creatAnAccount ;
 
 
 

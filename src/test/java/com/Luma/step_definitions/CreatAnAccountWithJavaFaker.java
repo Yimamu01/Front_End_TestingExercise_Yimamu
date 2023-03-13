@@ -25,24 +25,24 @@ public class CreatAnAccountWithJavaFaker {
     String password="Test123456";
     @When("user enter first name in the First Name Box")
     public void user_enter_first_name_in_the_first_name_box() {
-        createAccountPage.FirstNameBox.sendKeys(firstName);
+        createAccountPage.firstNameBox.sendKeys(firstName);
     }
     @When("user enter last name in the Last Name Box")
     public void user_enter_last_name_in_the_last_name_box() {
-        createAccountPage.LastNameBox.sendKeys(lastName);
+        createAccountPage.lastNameBox.sendKeys(lastName);
     }
     @When("user enter email in the Email box")
     public void user_enter_email_in_the_email_box() {
-        createAccountPage.EmailAddressBox.sendKeys(email);
+        createAccountPage.emailAddressBox.sendKeys(email);
 
     }
     @When("user enter password in the Password Box")
     public void user_enter_password_in_the_password_box() {
-        createAccountPage.PasswordBox.sendKeys(password);
+        createAccountPage.passwordBox.sendKeys(password);
 
     }
     @When("user enter password in the Password Confirmation Box")
     public void user_enter_password_in_the_password_confirmation_box() {
-       createAccountPage.ConfirmPasswordBox.sendKeys(password);
+       createAccountPage.confirmPasswordBox.sendKeys(password);
     }
 }

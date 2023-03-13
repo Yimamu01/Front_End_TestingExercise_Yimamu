@@ -10,17 +10,17 @@ public class ProperEmailFormat {
      CreateAccountPage createAccountPage=new CreateAccountPage();
     @When("user enter an invalid email format")
     public void user_enter_an_invalid_email_format() {
-createAccountPage.EmailAddressBox.sendKeys("test.gmail.com");
+createAccountPage.emailAddressBox.sendKeys("test.gmail.com");
 
 
     }
     @Then("user should be able to see an error message {string}")
     public void user_should_be_able_to_see_an_error_message(String string) {
 
-        String actualResult=createAccountPage.emailErrorMessage.getText();
-        String expectedResult="Please enter a valid email address (Ex: johndoe@domain.com).";
+        String ActualResult=createAccountPage.emailErrorMessage.getText();
+        String ExpectedResult="Please enter a valid email address (Ex: johndoe@domain.com).";
 
-        Assert.assertEquals(expectedResult,actualResult);
+        Assert.assertEquals(ExpectedResult,ActualResult);
 
     }
 
