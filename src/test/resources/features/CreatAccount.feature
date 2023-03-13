@@ -29,12 +29,12 @@ Feature: As a user, I can create an account
 
       Examples:
         | FirstName | lastName | Email | Password |
-        |  Alim01 | Tursun01 |Alim001@gmail.com|Test123456|
-        |  Alim02 | Tursun02 |Alim002@gmail.com|Test123456|
-        |  Alim03 | Tursun03 |Alim003@gmail.com|Test123456|
-        |  Alim04 | Tursun04 |Alim004@gmail.com|Test123456|
-        |  Alim05 | Tursun05 |Alim005@gmail.com|Test123456|
-        |  Alim06 | Tursun06|Alim006@gmail.com|Test123456|
+        |  Alim01 | Tursun01 |Aliy<<m001f@gmail.com|Test123456|
+        |  Alim02 | Tursun02 |dd@gmail.com|Test123456|
+        |  Alim03 | Tursun03 |Aldddim003dd@gmail.com|Test123456|
+        |  Alim04 | Tursun04 |Alim0ddd0dd4@gmail.com|Test123456|
+        |  Alim05 | Tursun05 |Alim00ddcc5@gmail.com|Test123456|
+        |  Alim06 | Tursun06|Alim00ddxxxx6@gmail.com|Test123456|
 
 
 

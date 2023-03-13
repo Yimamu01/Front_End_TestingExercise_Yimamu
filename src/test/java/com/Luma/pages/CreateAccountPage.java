@@ -5,11 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateAccountPage {
+public class CreateAccountPage extends BasePage {
 
-    public CreateAccountPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+
 
     @FindBy(id = "firstname")
     public WebElement firstNameBox;

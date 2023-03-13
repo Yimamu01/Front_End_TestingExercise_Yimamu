@@ -5,10 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UserHomePage {
-    public UserHomePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+public class UserHomePage extends BasePage {
+
 
     @FindBy(xpath = "//span[@class='logged-in']")
     public WebElement accountWelcomeText;
