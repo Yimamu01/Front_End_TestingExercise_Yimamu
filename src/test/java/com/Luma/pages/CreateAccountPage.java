@@ -1,7 +1,6 @@
 package com.Luma.pages;
 
 import com.Luma.utilities.Driver;
-import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

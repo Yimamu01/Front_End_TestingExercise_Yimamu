@@ -25,11 +25,12 @@ public class CreatAnAccount {
     @Given("user in on home page")
     public void user_in_on_home_page() {
       Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @When("user click on create an account button")
     public void user_click_on_create_an_account_button() {
         homePage.CreatAnAccount.click();
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @When("user enter {string} in the First Name Box")
     public void user_enter_in_the_first_name_box(String string) {
@@ -64,7 +65,17 @@ public class CreatAnAccount {
 
     String actual =userHomePage.AccountWelcomeText.getAttribute("class");
     String expected="logged-in";
-       Assert.assertEquals(actual,expected);
+       Assert.assertEquals(expected,actual);
+       Driver.getDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+
+    }
+
+    @Then("user click on log-out button")
+    public void user_click_on_log_out_button() {
+        userHomePage.UserNameButton.click();
+        Driver.getDriver().manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        userHomePage.SignOutButton.click();
+        Driver.getDriver().manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
     }
 
 }

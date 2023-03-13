@@ -23,17 +23,19 @@ Feature: As a user, I can create an account
       And user enter "<Password>" in the Password box
       And  user enter "<Password>" in the Password Confirmation box
       And user click on Creat an Account Confirmation button
-      Then user be able to the message "logged-in"
+      And user be able to the message "logged-in"
+      Then user click on log-out button
+
 
       Examples:
         | FirstName | lastName | Email | Password |
-        |  John01 | Max01 | Max01@gmail.com|Test123456|
-        |  John02 | Max02 | Max02@gmail.com|Test123456|
-        |  John03 | Max03 | Max03@gmail.com|Test123456|
-        |  John04 | Max04 | Max04@gmail.com|Test123456|
-        |  John05 | Max05 | Max05@gmail.com|Test123456|
-        |  John06 | Max06 | Max06@gmail.com|Test123456|
-        |  John07 | Max07 | Max07@gmail.com|Test123456|
+        |  Alim01 | Tursun01 |Alim001@gmail.com|Test123456|
+        |  Alim02 | Tursun02 |Alim002@gmail.com|Test123456|
+        |  Alim03 | Tursun03 |Alim003@gmail.com|Test123456|
+        |  Alim04 | Tursun04 |Alim004@gmail.com|Test123456|
+        |  Alim05 | Tursun05 |Alim005@gmail.com|Test123456|
+        |  Alim06 | Tursun06|Alim006@gmail.com|Test123456|
+
 
 
   Scenario: 003 Verify the Email box can differentiate a proper email format

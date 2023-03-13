@@ -2,8 +2,8 @@ package com.Luma.step_definitions;
 
 import com.Luma.pages.CreateAccountPage;
 import com.Luma.pages.UserHomePage;
-import io.cucumber.java.en.When;
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.When;
 
 
 public class CreatAnAccountWithJavaFaker {

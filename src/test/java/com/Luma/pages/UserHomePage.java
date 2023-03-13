@@ -12,4 +12,11 @@ public class UserHomePage {
 
     @FindBy(xpath = "//span[@class='logged-in']")
     public WebElement AccountWelcomeText;
+
+    @FindBy(xpath = "//button[@data-action='customer-menu-toggle']")
+    public WebElement UserNameButton;
+
+
+    @FindBy(xpath = "//li[@class='authorization-link']")
+    public WebElement SignOutButton;
 }
